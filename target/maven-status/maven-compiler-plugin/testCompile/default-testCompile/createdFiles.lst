@@ -1,3 +1,2 @@
-com\api\cucumber\runner\TestRunner.class
 com\api\cucumber\AppTest.class
 com\api\cucumber\runner\PostMethodRunnerTest.class

@@ -1,28 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="4.851284">
-<testcase classname="Title of your feature" name="Title of your scenario" time="0.158418">
-<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given I want to write a step with precondition..............................passed
-And some other precondition.................................................passed
-When I complete action......................................................passed
-And some other action.......................................................passed
-And yet another action......................................................passed
-Then I validate the outcomes................................................pending
-And check more outcomes.....................................................skipped
-]]></failure>
-</testcase>
-<testcase classname="Title of your feature" name="Title of your scenario outline" time="0.004417">
-<system-out><![CDATA[Given I want to write a step with name1.....................................passed
-When I check for the 5 in step..............................................passed
-Then I verify the success in step...........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.000955">
-<system-out><![CDATA[Given I want to write a step with name2.....................................passed
-When I check for the 7 in step..............................................passed
-Then I verify the Fail in step..............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Add a laptop in laptop bag" name="Add details" time="4.684626">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="5.000091">
+<testcase classname="Add a laptop in laptop bag" name="Add details" time="4.907139">
 <system-out><![CDATA[Given Accept Content in Json Format.........................................passed
 And Content type as Json....................................................passed
 When I perform Post request with Brand name as "Dell" , Features as "8 GB RAM , 1 TB Hard Drive",LaptopName as "Latitude".passed
@@ -30,7 +8,15 @@ Then Status code "200" should returned......................................pass
 And Response should have Integer Id.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Try to add laptop in laptop bag with Invalid body" name="Post details with invalid body" time="0.002573">
+<testcase classname="Add a laptop in laptop bag" name="Scene Changed in POST" time="0.089732">
+<system-out><![CDATA[Given Accept Content in Json Format.........................................passed
+And Content type as Json....................................................passed
+When I perform Post request with Brand name as "Dell" , Features as "10 GB RAM , 1 TB Hard Drive",LaptopName as "Latitude".passed
+Then Status code "200" should returned......................................passed
+And Response should have Integer Id.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Try to add laptop in laptop bag with Invalid body" name="Post details with invalid body" time="0.002716">
 <system-out><![CDATA[Given Accept Content in Json Format.........................................passed
 And Content type as Json....................................................passed
 But I supply invalid json body..............................................not executed
@@ -38,7 +24,10 @@ When i perform Post request Status code "400" should returned...............not 
 Then Status code "400" should returned......................................not executed
 ]]></system-out>
 </testcase>
-<testcase classname="Update a laptop information in laptop bag" name="Post ad Then Update Details of Laptop" time="0.000295">
+<testcase classname="Update a laptop information in laptop bag" name="Post ad Then Update Details of Laptop" time="0.000216">
+<system-out/>
+</testcase>
+<testcase classname="ZZZ FEature File" name="Post ad Then Update Details of Laptop" time="0.000288">
 <system-out/>
 </testcase>
 </testsuite>

@@ -23,7 +23,7 @@ import cucumber.api.junit.Cucumber;
         		"pretty", "html:target/htmlreports",
         		"json:target/cucumber.json",
         		"junit:target/cucumber.xml"}
-       // tags = {"@functional"}
+       // tags = {"@functional1"}
 
         		)
 
