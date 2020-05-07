@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.api.cucumber.runner.PostMethodRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 27, Failures: 0, Errors: 4, Skipped: 1, Time elapsed: 7.359 s <<< FAILURE! - in com.api.cucumber.runner.PostMethodRunnerTest
+Then I validate the outcomes(Scenario: Title of your scenario)  Time elapsed: 0.009 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+Scenario: Title of your scenario  Time elapsed: 0.011 s  <<< ERROR!
+cucumber.api.PendingException: TODO: implement me
+
+Feature: Try to add laptop in laptop bag with Invalid body  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException
+
+Feature: Update a laptop information in laptop bag  Time elapsed: 0.004 s  <<< ERROR!
+cucumber.runtime.CucumberException: Expected step: "i perform Post request Status code "400" should returned" got step: "Accept Content in Json Format"
+
